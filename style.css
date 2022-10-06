@@ -4,6 +4,25 @@ html {
 	scroll-behavior: smooth;
 }
 
+#contact {
+	position: fixed;
+	z-index: 3;
+	right: 55px;
+	bottom: 55px;
+	font-weight: 500;
+	color: rgb(117, 211, 80);
+	padding: 12px;
+	border-radius: 12px;
+	border: solid 2px transparent;
+	background-color: rgb(30, 36, 45);
+	transition: ease-in-out 0.3s;
+}
+
+#contact:hover {
+	background-color: rgba(30, 36, 45, 0.5);
+	border: solid 2px rgb(117, 211, 80);
+}
+
 body {
 	margin: 0;
 	color: rgb(30, 36, 45);
@@ -168,7 +187,7 @@ ul {
 
 .pdf:hover {
 	border: solid 2px rgb(117, 211, 80);
-	background-color: rgb(30, 36, 45);
+	background-color: rgba(30, 36, 45, 0.567);
 }
 
 footer {
