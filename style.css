@@ -53,19 +53,25 @@ body {
 	margin: 0;
 	height: 100vh;
 	font-weight: 400;
-	background-image: url(img/PHOTO-2022-10-03-19-41-19.jpg);
+	background-image: linear-gradient(rgba(30, 36, 45, 0), rgb(30, 36, 45)),
+						url(img/PHOTO-2022-10-03-19-41-19.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
-	background-attachment: fixed;
+	background-attachment: scroll, fixed;
 	background-size: cover;
 	color: rgb(117, 211, 80);
 }
 
 #home p {
-	background-color: rgb(30, 36, 45);
 	padding: 20px;
 	border-radius: 15px;
 	font-size: 2rem;
+}
+
+#home h1 {
+	padding: 0;
+	margin: 10px;
+	background-color: transparent;
 }
 
 h1 {
@@ -98,8 +104,9 @@ a {
 
 #lang_body {
 	margin: 0;
-	background-image: url(./img/PHOTO-2022-10-03-19-40-52.jpg);
-	background-color: #0005;
+	background-image: linear-gradient(rgba(30, 36, 45, 0),
+					rgb(30, 36, 45)), url(./img/image2.jpeg);
+	background-color: rgba(30, 36, 45, 0.566);
 	background-size: cover;
 	background-position: center;
 	width: 100%;
@@ -113,7 +120,6 @@ a {
 	font-weight: 400;
 	display: flex;
 	flex-direction: column;
-	background-color: rgba(30, 36, 45, 0.566);
 	box-shadow: 12px;
 	border-radius: 8px;
 	padding: 0;
@@ -125,29 +131,25 @@ ul {
 }
 
 .lang_box li:hover {
-	background-color: rgba(30, 36, 45, 0.566);
-	border: solid 1px rgb(117, 211, 80);
+	/*background-color: rgba(30, 36, 45, 0.566);*/
+	border: solid 2px rgb(117, 211, 80);
 	transition: ease-in-out 0.3s;
+	background-color: rgba(30, 36, 45, 0.427);
 }
 
 .lang_box li {
 	flex: auto;
 	color: rgb(117, 211, 80);
-	border: solid 1px transparent;
+	border: solid 2px transparent;
 	display: flex;
-	justify-content: center;
+	/*justify-content: center;*/
 	align-items: center;
-	height: 30px;
-	width: 100px;
+	height: 40px;
+	/*width: 480px;*/
 	margin: 0;
-}
-
-.li_end {
-	border-radius: 0 0 8px 8px;
-}
-
-.li_start {
-	border-radius: 8px 8px 0 0;
+	padding-left: 12px;
+	padding-right: 12px;
+	border-radius: 8px;
 }
 
 .pdf {
